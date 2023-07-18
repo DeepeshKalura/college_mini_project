@@ -1,5 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { initializeConnect } from 'react-redux/es/components/connect';
+import { createSlice } from '@reduxjs/toolkit'
 
 const authSlice = createSlice({
     name: 'auth',
@@ -11,9 +10,9 @@ const authSlice = createSlice({
         },
         logOut: (state, action) => {
             state.token = null
-        }
+        },
     }
-});
+})
 
 export const { setCredentials, logOut } = authSlice.actions
 
